@@ -1,0 +1,1 @@
+## Angular documentation to write a better code
