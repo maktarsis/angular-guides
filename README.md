@@ -1,4 +1,4 @@
-## Angular documentation to write apps properly
+## Angular Guidance to write apps properly
 
 ### Content:
 
