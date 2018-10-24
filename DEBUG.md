@@ -35,10 +35,12 @@ platformBrowserDynamic().bootstrapModule(AppModule)
   })
   .catch(err => console.log(err));
 ```
+
 - **_tap()_** (RXJS Library) <br/> <br/>
 If you are using RxJs operators, you might find that debugging the operator chain can be a bit tricky and having a .tap() between the operators makes it easier to inspect the chain. It gives us the ability to watch the chain without actually modifying it.
 <br/>
 tap is the pipeable operator equivalent of do in RxJs version 5.5 and above. The name was changed to avoid conflicts with Javascript keyword do.
+
 ```typescript
 const wholeNumbers$ = of(1, 2, 3, 4, 5);
 const squareNumbers$ = wholeNumbers$
@@ -48,6 +50,7 @@ const squareNumbers$ = wholeNumbers$
   tap(num => console.log(`Square number: ${num}`))
 );
 ```
+
 <img src="https://cdn-images-1.medium.com/max/800/1*7FyXQpaGTntUIfimj-Hgpw.png" alt="result"/>
 
 - <a href="https://augury.angular.io/">**_Augury_**</a> (Chrome extension)
@@ -60,4 +63,5 @@ Provides a visual representation of the Angular components on a page, their depe
 <br/> <br/>
   If you are using Redux to manage your application state, there is a Chrome extension called Redux DevTools which lets us see all the actions dispatched, state of the application after each action and the difference in states.
 <br/>
+
 <img src="https://cdn-images-1.medium.com/max/1000/1*87nCA5YOtLzdNPPkDYDVeQ.gif" alt="example"/>
