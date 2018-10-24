@@ -64,4 +64,4 @@ Provides a visual representation of the Angular components on a page, their depe
   If you are using Redux to manage your application state, there is a Chrome extension called Redux DevTools which lets us see all the actions dispatched, state of the application after each action and the difference in states.
 <br/>
 
-<img src="https://cdn-images-1.medium.com/max/1000/1*87nCA5YOtLzdNPPkDYDVeQ.gif" alt="example"/>
+<img src="/assets/ngrx-devtool-example.gif?raw=true" alt="example"/>
