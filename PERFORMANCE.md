@@ -294,6 +294,7 @@ However, the execution will benefit from the fact that Angular caches the result
 8. **Minimize DOM Manipulations / TrackBy**
 <br/>
 By default, when iterating over a list of objects, Angular will use object identity to determine if items are added, removed, or rearranged. This works well for most situations. However, with the introduction of immutable practices, changes to the list’s content generates new objects. In turn, ngFor will generate a new collection of DOM elements to be rendered. If the list is long or complex enough, this will increase the time it takes the browser to render updates. To mitigate this issue, it is possible to use trackBy to indicate how a change to an entry is determined.
+
 ```typescript
 import { Component } from '@angular/core';
 import { ListService } from '../list.service';
@@ -313,6 +314,7 @@ export class InstructorListComponent {
   }
 }
 ```
+
 ```html
 <!--
   As the references change ngFor will continuously regenerate the DOM
